@@ -12,11 +12,11 @@ RDEPENDS_${PN} = "networkmanager iw avahi-daemon avahi-autoipd iputils-arping wp
                   python3-jinja2 python3-pygobject python3-dbus python3-networkmanager python3-pyinotify python3-flask coreutils" 
 
 SRC_URI = "git://github.com/davesteele/comitup \
-           file://web_path_hack.patch \
            file://comitup.service \
            file://comitup-web.service "
-SRCREV = "b0bf19a13afa5ae9df38693ea66c2c95d9b08ab1"
+SRCREV = "3b9fc1a92be42063f38b9ba6f2deabfd87164b04"
 
+PYTHON_SITEPACKAGES_DIR ?= "/usr/share/comitup"
 
 FILES_${PN} += "/lib/ /sbin/"
 

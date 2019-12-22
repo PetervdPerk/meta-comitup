@@ -8,8 +8,10 @@ LICENSE = "GPL-2.0"
 LIC_FILES_CHKSUM = "file://COPYING;md5=b234ee4d69f5fce4486a80fdaf4a4263"
 
 
-RDEPENDS_${PN} = "networkmanager iw avahi-daemon avahi-autoipd iputils-arping wpa-supplicant-cli \
-                  python3-jinja2 python3-pygobject python3-dbus python3-networkmanager python3-pyinotify python3-flask coreutils" 
+RDEPENDS_${PN} = "avahi-autoipd avahi-daemon coreutils dnsmasq iw iputils-arping \
+                  networkmanager systemd wpa-supplicant-cli \
+                  python3-pycrypto python3-dbus python3-flask python3-jinja2  \
+                  python3-networkmanager python3-pygobject python3-pyinotify " 
 
 SRC_URI = "git://github.com/davesteele/comitup \
            file://comitup.service \
